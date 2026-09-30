@@ -208,17 +208,39 @@ Based on the protocol mechanics analyzed during this exercise, the following def
 
 ## 9. Evidence
 
-Evidence screenshots from the Wireshark analysis session correspond to the files listed below. 
+Evidence screenshots captured during the Wireshark analysis session have been verified and placed into the [`screenshots/`](../screenshots/) directory:
 
-| File Name | Protocol / View | Target Verification | Status in Repository |
+| File Name | Protocol / View | Target Verification | Status |
 |---|---|---|---|
-| `01-icmp-analysis.png` | ICMP Echo Request / Reply | Verification of ICMP Type 8 and Type 0 exchange | *Pending placement in `screenshots/`* |
-| `02-tcp-handshake.png` | TCP 3-Way Handshake | Inspection of SYN, SYN-ACK, ACK sequence | *Pending placement in `screenshots/`* |
-| `03-http-analysis.png` | HTTP / Port 80 Filter | Inspection of `http` and `tcp.port == 80` filters | *Pending placement in `screenshots/`* |
-| `04-arp-analysis.png` | ARP Resolution | Address resolution request and reply between hosts | *Pending placement in `screenshots/`* |
-| `05-protocol-hierarchy.png` | Protocol Hierarchy Statistics | Distribution of captured protocols and frame percentages | *Pending placement in `screenshots/`* |
+| `01-icmp-analysis.png` | ICMP Echo Request / Reply | Verification of ICMP Type 8 and Type 0 exchange | Confirmed & Verified |
+| `02-tcp-handshake.png` | TCP 3-Way Handshake | Inspection of SYN, SYN-ACK, ACK sequence | Confirmed & Verified |
+| `03-http-analysis.png` | HTTP / Port 80 Filter | Inspection of `http` and `tcp.port == 80` filters | Confirmed & Verified |
+| `04-arp-analysis.png` | ARP Resolution | Address resolution request and reply between hosts | Confirmed & Verified |
+| `05-protocol-hierarchy.png` | Protocol Hierarchy Statistics | Distribution of captured protocols and frame percentages | Confirmed & Verified |
 
-> **Evidentiary Integrity Notice:** In strict accordance with laboratory reporting guidelines, placeholder or fabricated images have not been generated. When the analyst transfers the genuine capture screenshots into the `screenshots/` directory, they may be viewed directly under their corresponding filenames. If a particular screenshot was not captured during the lab run, it is formally documented as **Not captured / not applicable**.
+---
+
+### Evidence Figures
+
+#### 9.1 ICMP Analysis (`01-icmp-analysis.png`)
+![ICMP Analysis](../screenshots/01-icmp-analysis.png)
+*Figure 9.1: Wireshark display filter `icmp` verifying ICMP Type 8 Echo Request and Type 0 Echo Reply sequence.*
+
+#### 9.2 TCP 3-Way Handshake (`02-tcp-handshake.png`)
+![TCP Handshake](../screenshots/02-tcp-handshake.png)
+*Figure 9.2: Wireshark display filter `tcp` verifying connection establishment (SYN, SYN-ACK, ACK).*
+
+#### 9.3 HTTP / Port 80 Filter (`03-http-analysis.png`)
+![HTTP Analysis](../screenshots/03-http-analysis.png)
+*Figure 9.3: Wireshark display filter verification for port 80 traffic; application-layer HTTP payloads were unconfirmed.*
+
+#### 9.4 ARP Resolution (`04-arp-analysis.png`)
+![ARP Analysis](../screenshots/04-arp-analysis.png)
+*Figure 9.4: Wireshark display filter `arp` verifying address resolution request and unicast reply.*
+
+#### 9.5 Protocol Hierarchy Statistics (`05-protocol-hierarchy.png`)
+![Protocol Hierarchy](../screenshots/05-protocol-hierarchy.png)
+*Figure 9.5: Wireshark Protocol Hierarchy Statistics window displaying captured protocol distribution.*
 
 ---
 

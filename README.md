@@ -134,28 +134,63 @@ The analysis was performed entirely within a private, isolated VirtualBox Host-O
 
 ## 📸 Evidence & Screenshots
 
-The analysis references five primary evidence captures. Image files reside in the [`screenshots/`](screenshots/) directory:
+The analysis references five primary evidence captures stored in the [`screenshots/`](screenshots/) directory:
 
-| Evidence Identifier | File Path | Description | Current Status |
+| Evidence Identifier | File Path | Description | Status |
 |---|---|---|---|
-| **Screenshot 01** | [`screenshots/01-icmp-analysis.png`](screenshots/01-icmp-analysis.png) | ICMP Echo Request / Reply inspection | *Awaiting file placement* |
-| **Screenshot 02** | [`screenshots/02-tcp-handshake.png`](screenshots/02-tcp-handshake.png) | TCP 3-way handshake (SYN, SYN-ACK, ACK) | *Awaiting file placement* |
-| **Screenshot 03** | [`screenshots/03-http-analysis.png`](screenshots/03-http-analysis.png) | HTTP filter / Port 80 connection verification | *Awaiting file placement* |
-| **Screenshot 04** | [`screenshots/04-arp-analysis.png`](screenshots/04-arp-analysis.png) | ARP broadcast request & unicast reply | *Awaiting file placement* |
-| **Screenshot 05** | [`screenshots/05-protocol-hierarchy.png`](screenshots/05-protocol-hierarchy.png) | Wireshark Protocol Hierarchy Statistics | *Awaiting file placement* |
+| **Screenshot 01** | [`screenshots/01-icmp-analysis.png`](screenshots/01-icmp-analysis.png) | ICMP Echo Request / Reply inspection | Confirmed & Embedded |
+| **Screenshot 02** | [`screenshots/02-tcp-handshake.png`](screenshots/02-tcp-handshake.png) | TCP 3-way handshake (SYN, SYN-ACK, ACK) | Confirmed & Embedded |
+| **Screenshot 03** | [`screenshots/03-http-analysis.png`](screenshots/03-http-analysis.png) | HTTP filter / Port 80 connection verification | Confirmed & Embedded |
+| **Screenshot 04** | [`screenshots/04-arp-analysis.png`](screenshots/04-arp-analysis.png) | ARP broadcast request & unicast reply | Confirmed & Embedded |
+| **Screenshot 05** | [`screenshots/05-protocol-hierarchy.png`](screenshots/05-protocol-hierarchy.png) | Wireshark Protocol Hierarchy Statistics | Confirmed & Embedded |
 
-> *Note: In accordance with reporting integrity standards, placeholder or fabricated screenshots have not been generated. Screenshots will display once the genuine image files are placed into the `screenshots/` directory.*
+### Visual Evidence Previews
+
+<details open>
+<summary><b>01. ICMP Analysis</b> (<code>screenshots/01-icmp-analysis.png</code>)</summary>
+<br>
+
+![ICMP Analysis](screenshots/01-icmp-analysis.png)
+</details>
+
+<details open>
+<summary><b>02. TCP 3-Way Handshake</b> (<code>screenshots/02-tcp-handshake.png</code>)</summary>
+<br>
+
+![TCP Handshake](screenshots/02-tcp-handshake.png)
+</details>
+
+<details open>
+<summary><b>03. HTTP Filter Verification</b> (<code>screenshots/03-http-analysis.png</code>)</summary>
+<br>
+
+![HTTP Inspection](screenshots/03-http-analysis.png)
+</details>
+
+<details open>
+<summary><b>04. ARP Address Resolution</b> (<code>screenshots/04-arp-analysis.png</code>)</summary>
+<br>
+
+![ARP Resolution](screenshots/04-arp-analysis.png)
+</details>
+
+<details open>
+<summary><b>05. Protocol Hierarchy Statistics</b> (<code>screenshots/05-protocol-hierarchy.png</code>)</summary>
+<br>
+
+![Protocol Hierarchy](screenshots/05-protocol-hierarchy.png)
+</details>
 
 ---
 
 ## 💾 Packet Capture File
 
-The raw packet capture file for this assessment will be stored in the [`captures/`](captures/) directory:
+The raw packet capture file for this assessment is stored in the [`captures/`](captures/) directory:
 
-- **Target File:** `captures/SWYNEX_Task2_Network_Analysis.pcapng`
-- **Inspection Command:**
+- **Capture File:** [`captures/SWYNEX-Task2_network_Analysis.pcapng`](captures/SWYNEX-Task2_network_Analysis.pcapng)
+- **Wireshark Inspection Command:**
   ```bash
-  wireshark captures/SWYNEX_Task2_Network_Analysis.pcapng
+  wireshark captures/SWYNEX-Task2_network_Analysis.pcapng
   ```
 
 ---
